@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# AI Studio & local verification artifacts
+.aistudio/
+public/assets/aistudio/
+verify-*.png
+

@@ -1,0 +1,8 @@
+{
+  "name": "AICTE APAAR Student Verification & Intake Portal",
+  "description": "National APAAR ID-based student data management, intake cap monitoring, duplicate detection, and tamper-evident cryptographic audit platform for AICTE-approved institutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
