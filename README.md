@@ -16,26 +16,26 @@ The AICTE APAAR Student Verification & Sanctioned Intake Portal is a national-sc
 2. Background & Problem Statement
 Higher and technical education in India historically suffered from fragmented, paper-based student tracking and isolated institutional databases. This fragmentation introduced critical systemic vulnerabilities:
 
-Duplicate Admissions & Ghost Students: Students simultaneously occupying seats across multiple colleges or universities without detection, artificially inflating enrolment numbers and draining state resources.
+  Duplicate Admissions & Ghost Students: Students simultaneously occupying seats across multiple colleges or universities without detection, artificially inflating enrolment numbers and draining state resources.
 
-Intake Cap Violations: Institutions admitting students beyond their AICTE-approved sanctioned intake capacities, leading to compromised educational standards and regulatory breaches.
+  Intake Cap Violations: Institutions admitting students beyond their AICTE-approved sanctioned intake capacities, leading to compromised educational standards and regulatory breaches.
 
-Credential Fraud & Verification Delays: Employers and background verification agencies relying on slow, manual processes to verify degree authenticity, leaving room for forged credentials.
+  Credential Fraud & Verification Delays: Employers and background verification agencies relying on slow, manual processes to verify degree authenticity, leaving room for forged credentials.
 
-Data Privacy & Consent Gaps: A lack of granular student control over who accesses their academic lifecycle data, conflicting with modern data privacy mandates like the Digital Personal Data Protection (DPDP) Act, 2023.
+  Data Privacy & Consent Gaps: A lack of granular student control over who accesses their academic lifecycle data, conflicting with modern data privacy mandates like the Digital Personal Data Protection (DPDP) Act, 2023.
 
 3. Novelty & Key Innovations of the Solution
 The platform introduces several architectural and algorithmic innovations to solve these national challenges:
 
-Automated UGC 2022 Concurrent Enrolment Engine: Unlike legacy systems that flag all repeated IDs as outright fraud, our rule engine parses dual-enrolment scenarios against official UGC guidelines—automatically separating exact duplicates (rejected), allowed dual-degree pathways (Physical + ODL/Online or non-overlapping physical classes), and Ph.D. exceptions requiring human review.
+  Automated UGC 2022 Concurrent Enrolment Engine: Unlike legacy systems that flag all repeated IDs as outright fraud, our rule engine parses dual-enrolment scenarios against official UGC guidelines—automatically separating exact duplicates (rejected), allowed dual-degree pathways (Physical + ODL/Online or non-overlapping physical classes), and Ph.D. exceptions requiring human review.
 
-Programme-Level Sanctioned Intake & What-If Simulator: Moves beyond blunt, college-wide headcount caps by evaluating admissions per individual discipline and academic year. It isolates supernumerary quotas (PMSSS, NRI, OCI, Foreign National) from regular intake counts and provides administrators with real-time capacity utilization analytics.
+  Programme-Level Sanctioned Intake & What-If Simulator: Moves beyond blunt, college-wide headcount caps by evaluating admissions per individual discipline and academic year. It isolates supernumerary quotas (PMSSS, NRI, OCI, Foreign National) from regular intake counts and provides administrators with real-time capacity utilization analytics.
 
-Tamper-Evident SHA-256 Cryptographic Hash Chain: Implements an append-only, hash-linked audit ledger for all statutory mutations (batch uploads, case resolutions, consent toggles, and inter-university credit transfers). Any unauthorized modification to historical records invalidates subsequent cryptographic pointers, ensuring absolute accountability.
+  Tamper-Evident SHA-256 Cryptographic Hash Chain: Implements an append-only, hash-linked audit ledger for all statutory mutations (batch uploads, case resolutions, consent toggles, and inter-university credit transfers). Any unauthorized modification to historical records invalidates subsequent cryptographic pointers, ensuring absolute accountability.
 
-DPDP-Compliant Student Consent Lock & Live Alerts: Empowers students with total ownership over their data via a consent lock mechanism. When locked, third-party verification requests are restricted, and automated alerts dispatch live sandbox notifications to the student's registered mobile device whenever their credentials are queried.
+  DPDP-Compliant Student Consent Lock & Live Alerts: Empowers students with total ownership over their data via a consent lock mechanism. When locked, third-party verification requests are restricted, and automated alerts dispatch live sandbox notifications to the student's registered mobile device whenever their credentials are queried.
 
-Explainable Case Adjudication Desk: Provides regulators and institution admins with structured exception queues, automated provenance passports, and evidence trails to resolve flagged discrepancies transparently.
+  Explainable Case Adjudication Desk: Provides regulators and institution admins with structured exception queues, automated provenance passports, and evidence trails to resolve flagged discrepancies transparently.
 
 ## Sandbox Scope & Architecture Note
 This repository runs as a self-contained client-side sandbox (`localStorage` persistence + simulated ABC verification adapter) for rapid evaluation via the **Demo Control Bar**. Reference PostgreSQL DDL and FastAPI service blueprints are included in the System Blueprint view (`seed_data.py` and `src/data/seedData.ts`).
